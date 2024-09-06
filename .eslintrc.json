@@ -1,0 +1,12 @@
+{
+  "env": {
+    "node" : true,
+    "es6": true
+  },
+  "parserOptions": {
+    "browser" : true,
+    "sourceType": "module",
+    "ecmaVersion": "latest"
+  },
+  "ignorePatterns": ["*.txt", "*.html", "*.md"]
+}

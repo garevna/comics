@@ -1,0 +1,22 @@
+{
+  "name": "comics",
+  "version": "1.0.0",
+  "description": "Helen's work (Kharkiv 2024)",
+  "main": "./public",
+  "scripts": {
+    "clean": "rd /s /q public .cache>nul 2>&1|echo.>nul",
+    "dev": "clean & webpack --mode development -w",
+    "start": "node live-server.js",
+    "prod": "webpack --mode production",
+    "ls": "git ls-files --cached",
+    "deploy": "git subtree push --prefix public origin gh-pages"
+  },
+  "author": "garevna <irina.h.fylyppova@gmail.com>",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "webpack": "^5.94.0",
+    "webpack-cli": "^5.1.4"
+  }
+}
